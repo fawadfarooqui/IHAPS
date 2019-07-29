@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.waseem.intelligentheartattackpreventionsystem.registeration" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.Registeration"
+            android:label="@string/title_activity_registeration" >
+            <intent-filter>
+                <action android:name="android.intent.action.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.Login"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.User_Interaction"
+            android:label="@string/title_activity_user__interaction" >
+            <intent-filter>
+                <action android:name="android.intent.action.UserInterection" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.MainMenu"
+            android:label="@string/title_activity_main_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MainMenu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.Dummy_activity"
+            android:label="@string/title_activity_dummy_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.DummyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.ReceiveData"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.waseem.intelligentheartattackpreventionsystem.registeration.HttpMethodsCall"
+            android:label="@string/title_activity_http_methods_call" >
+        </activity>
+    </application>
+
+</manifest>
